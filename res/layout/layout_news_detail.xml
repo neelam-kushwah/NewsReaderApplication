@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <RelativeLayout
+        android:id="@+id/rl_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Movie Reviews"
+            android:textColor="@color/grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_Header"
+        android:background="@color/background" >
+
+        <ImageView
+            android:id="@+id/iv_Pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background" />
+
+        
+
+            <RelativeLayout
+                android:id="@+id/rl_MovieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_Pic" >
+
+                <TextView
+                    android:id="@+id/tv_MovieName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Movie Name"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/tv_MovieNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_MovieName"
+                    android:gravity="right"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_Reviewer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_MovieTitle" >
+
+                <TextView
+                    android:id="@+id/tv_ReviewerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Reviewer Name"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/tv_ReviewerValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_Publication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_Reviewer" >
+
+                <TextView
+                    android:id="@+id/tv_PublicationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Publication Date"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/tv_PublicationDateValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_Summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_Publication"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/red" />
+    </RelativeLayout>
+
+</RelativeLayout>
